@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+		<title>Mon premier essai HTML & CSS</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
+</head>
+<body>
+				<!--Les bases de HTML-->
+				<!--Traductions de la page-->
+				<header>
+					<h1>Bienvenue sur mon site!</h1>
+					<p class="lang"> Slect your languague </p>
+				  </header>
+				
+				  <!-- Sélecteur pour la traduction -->
+				  <div id="google_translate_element"></div>
+				
+				  <main>
+					<h2>À propos de nous</h2>
+					<p>Ce site est conçu pour apprendre le HTML et le CSS </p>
+				  </main>
+				
+				  <!-- Script pour Google Translate -->
+				  <script type="text/javascript">
+					function googleTranslateElementInit() {
+					  new google.translate.TranslateElement({
+						pageLanguage: 'fr', // Langue par défaut de ton site
+						layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+					  }, 'google_translate_element');
+					}
+				  </script>
+				  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!--Fin de traduction-->
+
+
+				  <!--Le contenu du fichier-->
+	<h1 class="name"> ALAIN G. AVOCE</h1>
+		<h1> HyperText Markup language & CCS </h1>
+		<h2> Formation sur le language HTML 5 & CSS 3</h2>
+		<h3> <underline>TITRE:</underline> <element>HTML</element> est un language de balissage & <strong>CSS</strong> est un language de styles</h3>
+		<p><em>Mon premier projet écrit avec le languague HTML est écrit ce <mark>22 Juillet 2024 <!--vers 01H du matin--></mark></em></p>
+		<p id="A1">Une remarque importante est que<br> * HTML ne s'utilise que pour l'écriture du texte <br> * CSS pour la mise en forme</p>   
+
+		<h2> Cliquez  <span class="ancre"> <a href="#ancre1">" ici"</a> </span> pour voir les liens externes </h2>
+
+		<!--Listes en HTML-->
+		<h4 class="A1">Voici comment creer des listes en HTML</h4>
+		<p>On distingue des listes non ordonnées, ordonnées et de définitions<br><mark>Exemple</mark>:</p>
+		<!--Listes non ordonnées en HTML-->
+		<h5>listes non-ordonnées:</h5>
+			<ul>
+				<li>Statistique</li>
+				<li>Planification</li>
+				<li>Démographie</li>
+			</ul>
+		<!--Listes ordonnées en HTML-->
+		<h5>Listes ordonnées:</h5>	
+			<ol>
+				<li>Introduction</li>
+				<li>Patie I</li>
+				<li>Patie II</li>
+				<li>Patie III</li>
+				<li>Patie IV</li>
+				<li>Patie V</li>
+			</ol>
+		<h5>Listes imbriquées:</h5>
+			<ul>
+				<li>Partie I
+					<ol type="I">
+						<li>Statistique</li>
+						<li>Planification</li>
+						<li>Démographie</li>
+					</ol>
+				</li>
+				<li>Partie II
+					<ol type="i">
+						<li>Statistique</li>
+						<li>Planification</li>
+						<li>Démographie</li>
+					</ol>
+				</li>
+				<li>Partie III
+					<ol type="A">
+						<li>Statistique</li>
+						<li>Planification</li>
+						<li>Démographie</li>
+					</ol>
+				</li>
+				<li>Partie IV
+					<ol type="a">
+						<li>Statistique</li>
+						<li>Planification</li>
+						<li>Démographie</li>
+					</ol>
+				</li>
+			</ul>
+		<h5>Listes de définitions</h5>
+			<dl>
+				<dt>Statistique</dt>
+				<dd>C'est la discipline qui a pour tâche la collecte des données, leur analyse, leur interprétation et leur présentation à un public cible</dd>
+			</dl>
+		<!--Insertion de lien externe en HTML & insertion de target="_blank" pour permettre à l'utilisateur à ouvrir les liens dans des nouveaux onglets -->
+		<h5>Lien vers une page externe</h5>
+		<!--Création d'ancre-->
+	    <h2 id="ancre1">Les liens externes </h2>
+			<p>Cliquez <a href="https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3"target="_blank"> ici </a> pour accéder à la formation sur HTML & CSS offerte par Classroom</p>
+			<p>Cliquez <a href="https://www.pierre-giraud.com/html-css-apprendre-coder-cours/"target="_blank"> ici </a> pour accéder à celle offerte par Pierre Giraud</p>
+			<p>Cliquer<a href="https://fr.softonic.com/telecharger/komodo-edit/windows/post-telecharger?#"target="_blank"> ici </a> pour télécharger Komodo(IDE-HTML)</p>
+		<!--Envoyer un mail-->
+		<p>Cliquez pour m'envoyer un <a href="mailto:avocealain1@gmail.com"> mail </a></p>
+		<p>Cliquez pour <a href="html/html_css.pdf"target="_blank">télécharger</a> le support numérique du cours</p>
+		
+		<!--Image-->
+		<p class="fleur">Flower</p>
+		<div class="photo"> <img src="flower.jpg" alt="Photo d'une fleur"></div>
+
+<!--Les propriétés de CSS-->
+<h2> Les proprietés de "span & div"</h2>
+			<p> Ils sont utilisés pour idiquer un texte spécifique à mettre en forme , aucune d'autre propriétés que ça, ils peuvent être utilisé partout avec <mark>class</mark> ou <mark>id</mark> à l'intérieur de leur balise ouvrante</p>
+<h2> Les proprietés de "font"</h2>
+	<h3>Mise en forme de la police du texte</h3>
+			<h4> <span class="size">font-size></span> </h4>
+				<p>Utilisé pour définir la taille du texte soient en valeur abolue(px) ou en valeur relative (%) </p>
+
+	<!--Les proprietes de font-->
+	<h3>Font-famille</h3>
+			<p>Pour définir les différentes polices à prendre en charge pour afficher la page web</p>
+	<!--Mise en forme de la police du texte-->
+			<h4> <span class="size">font-style></span> </h4>
+				<p>Utilisé pour définir l'aspect du texte soient italic , normal , oblique ou inherit(garder la police d'un texte parent) </p>			
+	<!--Mise en forme de la police du texte-->
+			<h4> <span class="size">font-weigt></span> </h4>
+				<p>Utilisé pour définir le poids(épaisseur) du texte soient bold(épaise), normal , bolder(très épaise) ou on peut définir sur un échelle de 100 à 900 </p>	
+	<!--les couleurs et l'opacité-->
+		<h3>Les couleurs et l'opacité</h3>
+			<p>Les couleurs peuvent être donné soit par leur nom(red>>rouge...) , soit par des codes exa-décimales ( <span class="r"> #FF0000 / #880000</span>  pour le rouge , <span  class="v"> #00FF00 / #008800 </span>  pour le vert , et <span class="b"> #OOOOFF / #OOOO88 </span> pour le bleu , <span class="n">#OOOOOO</span> pour le noir et <span class="bl">#888888</span> pour le blanc ). Plus on se rapproche de 000000, plus la couleur devient pur., soit par le système vgb (en saisissant les trois valeurs de la couleurs dans une parenthèses, ex: VGB(255,0,0) pour le rouge pur ) , en ajoutant VGBa, on peut completer aux valeurs de VGB une quatrième valeur variant de 0 à 1 pour définir l'opacité ou utiliser le code "opacity" </p>
+		<h3>Les propriétés du type text</h3>
+			<p>
+			<ol>
+			<li>text-align</li>
+			<li>text-tranform</li>
+			<li>text-decoration</li>
+			<li>text-indent</li>
+			<li>text-shadow</li>
+			</ol>
+			</p>
+			<h3>La gestion des espaces en CSS</h3>
+			<p>
+			<ul>
+			<li class="lw">Line-Weigth</li>
+			<li class="ws">word-spacing : this is one example</li>
+			<li class="ls">letter spacing</li>
+			</ul>
+			</p>
+			<h3>Largeur & Hauteur</h3>
+			<p>Ces propriétés sont données par <mark>width & heigh</mark></p>
+			<h3>Les bordures</h3>
+			<p class="bord">Elle est definie par la proprieté <mark>border</mark>.<br> Elle possede autant de valeur. On peut défini les types de bordures ; le rayon de coin avec la proprietes <em>Radius</em>; Le style; la couleur de la bordure; aussi on peut choisir une bordure pour chaque partie de cadre de padding</p>
+			<h3>Ombres des boîtes</h3>
+			<p class="ombre">Les propriétés définissant l'aspect des ombres des boîtes sont des propriétés précédées de box- : on a box-shadow qui définit la bordure de la boîte</p>
+			<h3>Display</h3>
+			<p>La propriété Display du CSS permet de modifier la place occupée par un élément HTML. On a <span class="dis">display-inline</span> qui permet de mettre l'élément sur le type <span class="inline">Inline</span>; <span class="dis">display-block</span> qui permet de mettre l'élément sur le type <span class="Block">Block</span>; <span class="dis">display-inline-block</span>qui permet de mettre l'élément sur le type <span class="in_bl">Inline-Block;c'est-à-de définir soi même la place à occuper</span> et <span class="dis">display-none</span> qui permet de cacher un élément HTMl<span class="none">De cacher un élément HTML</span></p>
+			
+</body>
+</html>

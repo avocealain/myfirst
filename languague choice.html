@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site avec Traduction Automatique</title>
+</head>
+<body>
+  <header>
+    <h1>Bienvenue sur mon site !</h1>
+    <p>Choisissez votre langue pour traduire automatiquement le contenu.</p>
+  </header>
+
+  <!-- Sélecteur pour la traduction -->
+  <div id="google_translate_element"></div>
+
+  <main>
+    <h2>À propos de nous</h2>
+    <p>Ce site est conçu pour répondre à vos besoins, quelle que soit votre langue.</p>
+  </main>
+
+  <!-- Script pour Google Translate -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'fr', // Langue par défaut de ton site
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+  </script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
